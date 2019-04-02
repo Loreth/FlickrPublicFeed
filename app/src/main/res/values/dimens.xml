@@ -1,0 +1,18 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="feed_item_img_width">0dp</dimen>
+    <dimen name="feed_item_margin_top">8dp</dimen>
+    <dimen name="feed_item_elem_margin_left_right">16dp</dimen>
+    <dimen name="feed_item_margin_left_right">8dp</dimen>
+    <dimen name="feed_item_tags_margin_top">10dp</dimen>
+    <dimen name="feed_item_elem_margin_top">8dp</dimen>
+    <dimen name="feed_item_default_text_size">16sp</dimen>
+    <dimen name="url_input_width">0dp</dimen>
+    <dimen name="add_item_margin_left_right">8dp</dimen>
+    <dimen name="edit_to_label_margin_top">2dp</dimen>
+    <dimen name="image_label_margin_top">16dp</dimen>
+    <dimen name="image_label_margin_left">24dp</dimen>
+    <dimen name="elem_margin_top">8dp</dimen>
+    <dimen name="add_button_margin_top">50dp</dimen>
+    <dimen name="add_button_margin_bottom">8dp</dimen>
+</resources>

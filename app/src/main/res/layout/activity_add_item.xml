@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddItemActivity">
+    <EditText
+            android:layout_width="@dimen/url_input_width"
+            android:layout_height="wrap_content"
+            android:inputType="textUri"
+            android:ems="10"
+            android:id="@+id/urlInput"
+            android:hint="@string/hint_url" android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imgUrlLabel" android:layout_marginTop="@dimen/edit_to_label_margin_top"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/imgUrlLabel"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/imgNameInput"
+            android:hint="@string/hint_name" app:layout_constraintStart_toStartOf="@+id/imgNameLabel"
+            app:layout_constraintTop_toBottomOf="@+id/imgNameLabel" android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="@dimen/edit_to_label_margin_top"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:id="@+id/tagsInput"
+            android:hint="@string/hint_tags" app:layout_constraintStart_toStartOf="@+id/tagsLabel"
+            android:layout_marginTop="@dimen/edit_to_label_margin_top"
+            app:layout_constraintTop_toBottomOf="@+id/tagsLabel" android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="@string/image_url_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgUrlLabel" android:layout_marginTop="@dimen/image_label_margin_top"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/image_label_margin_left" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="@string/image_name_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgNameLabel" app:layout_constraintStart_toStartOf="@+id/urlInput"
+            android:layout_marginTop="@dimen/elem_margin_top"
+            app:layout_constraintTop_toBottomOf="@+id/urlInput" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/add_item_margin_left_right" app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="@string/tags_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagsLabel" android:layout_marginTop="@dimen/elem_margin_top"
+            app:layout_constraintTop_toBottomOf="@+id/imgNameInput" app:layout_constraintStart_toStartOf="@+id/imgNameInput"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/dateInput"
+            android:layout_marginTop="@dimen/edit_to_label_margin_top"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@+id/dateLabel"
+            app:layout_constraintStart_toStartOf="@+id/dateLabel" android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            android:hint="@string/hint_date"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateLabel" android:text="@string/date_label_text"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/elem_margin_top" app:layout_constraintTop_toBottomOf="@+id/tagsInput"
+            app:layout_constraintStart_toStartOf="@+id/tagsInput"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="@string/add_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addItemButton" android:layout_marginTop="@dimen/add_button_margin_top"
+            app:layout_constraintTop_toBottomOf="@+id/dateInput" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/add_item_margin_left_right" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            android:layout_marginBottom="@dimen/add_button_margin_bottom" app:layout_constraintBottom_toBottomOf="parent"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>

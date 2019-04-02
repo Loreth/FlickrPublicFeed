@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FlickrPublicFeed</string>
+    <string name="title_activity_add_item">Add item</string>
+    <string name="hint_url">http://website.com/image.jpg</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_tags">tag1, tag2, tag3</string>
+    <string name="image_url_label_text">Image URL</string>
+    <string name="image_name_label_text">Image name</string>
+    <string name="tags_label_text">Tags</string>
+    <string name="hint_date">19.03.2019</string>
+    <string name="date_label_text">Date</string>
+    <string name="add_button_text">Add</string>
+</resources>
