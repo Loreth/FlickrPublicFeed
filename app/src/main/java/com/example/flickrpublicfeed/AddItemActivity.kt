@@ -18,6 +18,7 @@ class AddItemActivity : AppCompatActivity() {
 
         val actionbar = supportActionBar
         actionbar!!.title = getString(R.string.title_activity_add_item)
+        actionbar.setDisplayHomeAsUpEnabled(true)
 
         addItemButton.setOnClickListener {
             putDataInReturnIntent()
@@ -70,11 +71,16 @@ class AddItemActivity : AppCompatActivity() {
         }
     }
 
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
+
     companion object {
         const val RESULT_OK = 0
         const val RESULT_ERROR = 1
         const val KEY_RESULT = "newItem"
         const val DATA_FORMAT = "MM.dd.yyyy"
-        const val TAGS_DELIMITER = "' "
+        const val TAGS_DELIMITER = ", "
     }
 }
