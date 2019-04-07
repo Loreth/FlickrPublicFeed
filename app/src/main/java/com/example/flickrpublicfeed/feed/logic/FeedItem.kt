@@ -3,18 +3,17 @@ package com.example.flickrpublicfeed.feed.logic
 import android.os.Parcel
 import android.os.Parcelable
 
-data class FeedItem(val imgUrl: String, val imgName: String, val tags: List<String>, val date: String): Parcelable {
+data class FeedItem(val imgUrl: String, val imgName: String, val date: String): Parcelable {
     constructor(parcel: Parcel) : this(
-        parcel.readString()!!,
-        parcel.readString()!!,
-        parcel.createStringArrayList()!!,
-        parcel.readString()!!
-    )
+        parcel.readString(),
+        parcel.readString(),
+        parcel.readString()
+    ) {
+    }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(imgUrl)
         parcel.writeString(imgName)
-        parcel.writeStringList(tags)
         parcel.writeString(date)
     }
 
@@ -31,4 +30,5 @@ data class FeedItem(val imgUrl: String, val imgName: String, val tags: List<Stri
             return arrayOfNulls(size)
         }
     }
+
 }

@@ -19,23 +19,13 @@
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="text"
+            android:inputType="textCapSentences"
             android:ems="10"
             android:id="@+id/imgNameInput"
             android:hint="@string/hint_name" app:layout_constraintStart_toStartOf="@+id/imgNameLabel"
             app:layout_constraintTop_toBottomOf="@+id/imgNameLabel" android:layout_marginEnd="@dimen/add_item_margin_left_right"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
             android:layout_marginTop="@dimen/edit_to_label_margin_top"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:ems="10"
-            android:id="@+id/tagsInput"
-            android:hint="@string/hint_tags" app:layout_constraintStart_toStartOf="@+id/tagsLabel"
-            android:layout_marginTop="@dimen/edit_to_label_margin_top"
-            app:layout_constraintTop_toBottomOf="@+id/tagsLabel" android:layout_marginEnd="@dimen/add_item_margin_left_right"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
     <TextView
             android:text="@string/image_url_label_text"
             android:layout_width="wrap_content"
@@ -53,14 +43,6 @@
             android:layout_marginTop="@dimen/elem_margin_top"
             app:layout_constraintTop_toBottomOf="@+id/urlInput" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="@dimen/add_item_margin_left_right" app:layout_constraintHorizontal_bias="0.0"/>
-    <TextView
-            android:text="@string/tags_label_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/tagsLabel" android:layout_marginTop="@dimen/elem_margin_top"
-            app:layout_constraintTop_toBottomOf="@+id/imgNameInput" app:layout_constraintStart_toStartOf="@+id/imgNameInput"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/add_item_margin_left_right"
-            app:layout_constraintHorizontal_bias="0.0"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,10 +59,10 @@
             android:layout_height="wrap_content"
             android:id="@+id/dateLabel" android:text="@string/date_label_text"
             android:focusable="false"
-            android:layout_marginTop="@dimen/elem_margin_top" app:layout_constraintTop_toBottomOf="@+id/tagsInput"
-            app:layout_constraintStart_toStartOf="@+id/tagsInput"
+            app:layout_constraintStart_toStartOf="@+id/imgNameLabel"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/add_item_margin_left_right"
-            app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="@dimen/elem_margin_top" app:layout_constraintTop_toBottomOf="@+id/imgNameInput"/>
     <Button
             android:text="@string/add_button_text"
             android:layout_width="wrap_content"

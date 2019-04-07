@@ -54,14 +54,12 @@ class AddItemActivity : AppCompatActivity() {
     private fun putDataInReturnIntent() {
         if (urlInput.text.isNotBlank() &&
             imgNameInput.text.isNotBlank() &&
-            tagsInput.text.isNotBlank() &&
             dateInput.text.isNotBlank()
         ) {
             val intent = Intent()
             val feedItem = FeedItem(
                 urlInput.text.toString(),
                 imgNameInput.text.toString(),
-                tagsInput.text.toString().split(TAGS_DELIMITER),
                 dateInput.text.toString()
             )
             intent.putExtra(KEY_RESULT, feedItem)
@@ -81,6 +79,5 @@ class AddItemActivity : AppCompatActivity() {
         const val RESULT_ERROR = 1
         const val KEY_RESULT = "newItem"
         const val DATA_FORMAT = "MM.dd.yyyy"
-        const val TAGS_DELIMITER = ", "
     }
 }

@@ -29,14 +29,6 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-        //hardcoded strings, as adding the first result is temporary, will be removed in version without the add feature
-        entries.add(
-            FeedItem(
-                "https://www.koty.pl/wp-content/uploads/2017/09/cat-are-liquid-imgur-2.jpg",
-                "Płynny kot", listOf("kot, płyn, naczynie"), "02.04.19"
-            )
-        )
-
         feedAdapter = FeedAdapter(entries)
 
         liveFeedRecyclerView.apply {
