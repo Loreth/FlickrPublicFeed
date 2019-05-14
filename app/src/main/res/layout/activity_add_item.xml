@@ -14,7 +14,8 @@
             android:id="@+id/urlInput"
             android:hint="@string/hint_url" android:layout_marginEnd="@dimen/add_item_margin_left_right"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/imgUrlLabel" android:layout_marginTop="@dimen/edit_to_label_margin_top"
+            app:layout_constraintStart_toStartOf="@+id/imgUrlLabel"
+            android:layout_marginTop="@dimen/edit_to_label_margin_top"
             app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toBottomOf="@+id/imgUrlLabel"/>
     <EditText
             android:layout_width="wrap_content"
@@ -23,7 +24,8 @@
             android:ems="10"
             android:id="@+id/imgNameInput"
             android:hint="@string/hint_name" app:layout_constraintStart_toStartOf="@+id/imgNameLabel"
-            app:layout_constraintTop_toBottomOf="@+id/imgNameLabel" android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            app:layout_constraintTop_toBottomOf="@+id/imgNameLabel"
+            android:layout_marginEnd="@dimen/add_item_margin_left_right"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
             android:layout_marginTop="@dimen/edit_to_label_margin_top"/>
     <TextView
@@ -51,7 +53,8 @@
             android:layout_marginTop="@dimen/edit_to_label_margin_top"
             android:focusable="false"
             app:layout_constraintTop_toBottomOf="@+id/dateLabel"
-            app:layout_constraintStart_toStartOf="@+id/dateLabel" android:layout_marginEnd="@dimen/add_item_margin_left_right"
+            app:layout_constraintStart_toStartOf="@+id/dateLabel"
+            android:layout_marginEnd="@dimen/add_item_margin_left_right"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
             android:hint="@string/hint_date"/>
     <TextView
@@ -71,6 +74,7 @@
             app:layout_constraintTop_toBottomOf="@+id/dateInput" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="@dimen/add_item_margin_left_right" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="@dimen/add_item_margin_left_right"
-            android:layout_marginBottom="@dimen/add_button_margin_bottom" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/add_button_margin_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
     />
 </androidx.constraintlayout.widget.ConstraintLayout>

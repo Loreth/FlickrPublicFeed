@@ -19,27 +19,43 @@
                                                 android:id="@+id/guideline"
                                                 android:orientation="horizontal"
                                                 app:layout_constraintGuide_percent="0.8"/>
-    <TextView
-            android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/itemImgName" tools:text="Name of the image"
-            android:layout_marginTop="@dimen/feed_item_margin_top" app:layout_constraintTop_toTopOf="@+id/guideline"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="@dimen/feed_item_elem_margin_left_right"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/feed_item_margin_left_right"
-            app:layout_constraintHorizontal_bias="0.0" android:textSize="@dimen/feed_item_default_text_size"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/itemTags" tools:text="tag1, tag2, tag3"
-            android:layout_marginTop="@dimen/feed_item_tags_margin_top" app:layout_constraintTop_toBottomOf="@+id/itemImgName"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="@dimen/feed_item_elem_margin_left_right"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/feed_item_margin_left_right"
-            app:layout_constraintHorizontal_bias="0.0" android:textStyle="italic"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/itemDate" tools:text="19.03.2019" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="@dimen/feed_item_elem_margin_left_right" android:layout_marginTop="@dimen/feed_item_elem_margin_top"
-            app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="@dimen/feed_item_margin_left_right" app:layout_constraintHorizontal_bias="1.0" android:textSize="@dimen/feed_item_default_text_size"/>
+            android:background="@color/colorFeedItem"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemDate" tools:text="19.03.2019" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/feed_item_elem_margin_left_right"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/feed_item_margin_left_right"
+                app:layout_constraintHorizontal_bias="1.0" android:textSize="@dimen/feed_item_default_text_size"
+                android:layout_marginTop="8dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemTags" tools:text="tag1, tag2, tag3"
+                android:layout_marginTop="@dimen/feed_item_tags_margin_top"
+                app:layout_constraintTop_toBottomOf="@+id/itemImgName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/feed_item_elem_margin_left_right"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/feed_item_margin_left_right"
+                app:layout_constraintHorizontal_bias="0.0" android:textStyle="italic" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemImgName" tools:text="Name of the image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/feed_item_elem_margin_left_right"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="@dimen/feed_item_margin_left_right"
+                app:layout_constraintHorizontal_bias="0.0" android:textSize="@dimen/feed_item_default_text_size"
+                android:layout_marginTop="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
